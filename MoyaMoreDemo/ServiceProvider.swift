@@ -25,18 +25,18 @@ extension MyService: TargetType {
     //服务器地址
     public var baseURL: URL {
         switch self {
-        case let .upload(fileURL:URL):
-            return URL
-        case let .uploadFileName(_, fileName):
-            return URL(string:"http://www.hangge.com/upload.php?fileName=" + fileName)!
-        case let .uploadMultiple( _, _, _, file2URL):
-            return file2URL
-        case let .uploadMultipleFileName(_, _, _, file2URL):
-            return file2URL
-        case let .downloadAsset(assetName):
-            return URL(string:assetName)!
-        case let .downloadAssetSaveName(assetName, saveName):
-            return URL(string: assetName + saveName)!
+        case .upload(fileURL:_):
+            return URL(string:"https://upload.giphy.com")!
+        case .uploadFileName(_, _):
+            return URL(string:"https://upload.giphy.com")!
+        case .uploadMultiple( _, _, _, _):
+            return URL(string:"https://upload.giphy.com")!
+        case .uploadMultipleFileName(_, _, _, _):
+            return URL(string:"https://upload.giphy.com")!
+        case .downloadAsset(_):
+            return URL(string: "https://raw.githubusercontent.com")!
+        case .downloadAssetSaveName(_, _):
+            return URL(string: "https://raw.githubusercontent.com")!
         }
     }
     
@@ -44,7 +44,7 @@ extension MyService: TargetType {
     public var path: String {
         switch self {
         case .upload(_):
-            return "/upload.php"
+            return "/v1/gifs"
         case .uploadFileName(_):
             return "/upload.php"
         case .uploadMultiple(_):

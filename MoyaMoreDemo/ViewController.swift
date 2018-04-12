@@ -15,14 +15,14 @@ class ViewController: UIViewController {
         
 //        upload()
 //        uploadFileName()
-//
+
 //        uploadMultiple()
 //        uploadMultipleFileName()
         
 //        download()
         downloadSaveName()
-        
-        downloadAssetLoader()
+//
+//        downloadAssetLoader()
     }
     
     // Upload a single document
