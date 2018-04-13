@@ -13,16 +13,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        upload()
-//        uploadFileName()
-
-//        uploadMultiple()
-//        uploadMultipleFileName()
-        
-//        download()
+    }
+    
+    @IBAction func uploadAction(_ sender: Any) {
+        upload()
+    }
+    @IBAction func uploadFileNameAction(_ sender: Any) {
+        uploadFileName()
+    }
+    @IBAction func uploadMultipleAction(_ sender: Any) {
+        uploadMultiple()
+    }
+    @IBAction func uploadMultipleFileNameAction(_ sender: Any) {
+        uploadMultipleFileName()
+    }
+    @IBAction func downloadAction(_ sender: Any) {
+        download()
+    }
+    @IBAction func downloadSaveNameAction(_ sender: Any) {
         downloadSaveName()
-//
-//        downloadAssetLoader()
+    }
+    @IBAction func downloadAssetLoaderAction(_ sender: Any) {
+        downloadAssetLoader()
     }
     
     // Upload a single document

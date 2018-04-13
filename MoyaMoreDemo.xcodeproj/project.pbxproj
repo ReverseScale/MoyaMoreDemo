@@ -128,9 +128,7 @@
 				34D61A5A207F009600A3E906 /* ViewController.swift */,
 				34D61A86207F051300A3E906 /* ServiceProvider.swift */,
 				34D61A8E207F391E00A3E906 /* AssetLoader.swift */,
-				34D61A88207F290600A3E906 /* hangge.zip */,
-				34D61A8B207F303400A3E906 /* hangge.png */,
-				34D61A8A207F303300A3E906 /* other.png */,
+				34D61A9A2080529A00A3E906 /* Resources */,
 				34D61A5C207F009600A3E906 /* Main.storyboard */,
 				34D61A5F207F009600A3E906 /* Assets.xcassets */,
 				34D61A61207F009600A3E906 /* LaunchScreen.storyboard */,
@@ -155,6 +153,16 @@
 				34D61A7A207F009600A3E906 /* Info.plist */,
 			);
 			path = MoyaMoreDemoUITests;
+			sourceTree = "<group>";
+		};
+		34D61A9A2080529A00A3E906 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34D61A88207F290600A3E906 /* hangge.zip */,
+				34D61A8B207F303400A3E906 /* hangge.png */,
+				34D61A8A207F303300A3E906 /* other.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		4CADDA84DE0F64A5479F231F /* Pods */ = {

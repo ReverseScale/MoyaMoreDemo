@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,78 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoyaMoreDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p4-KL-cd0">
+                                <rect key="frame" x="103" y="156.5" width="169" height="30"/>
+                                <state key="normal" title="上传单个文件（带参数）"/>
+                                <connections>
+                                    <action selector="uploadFileNameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BQr-Cq-EJZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkF-zC-qVF">
+                                <rect key="frame" x="103" y="256.5" width="169" height="30"/>
+                                <state key="normal" title="上传多个文件（带参数）"/>
+                                <connections>
+                                    <action selector="uploadMultipleFileNameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9p-js-JQV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlm-Z2-Yxt">
+                                <rect key="frame" x="141" y="118.5" width="92" height="30"/>
+                                <state key="normal" title="上传单个文件"/>
+                                <connections>
+                                    <action selector="uploadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mx-6b-bu3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZq-wK-JWL">
+                                <rect key="frame" x="172" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="下载"/>
+                                <connections>
+                                    <action selector="downloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9G-MW-O0c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDE-Ga-HYn">
+                                <rect key="frame" x="141" y="218.5" width="92" height="30"/>
+                                <state key="normal" title="上传多个文件"/>
+                                <connections>
+                                    <action selector="uploadMultipleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4e-3b-szN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaE-cM-VU8">
+                                <rect key="frame" x="141" y="356.5" width="92" height="30"/>
+                                <state key="normal" title="下载（命名）"/>
+                                <connections>
+                                    <action selector="downloadSaveNameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEh-YC-0ky"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvz-Ve-W7V">
+                                <rect key="frame" x="156" y="418.5" width="62" height="30"/>
+                                <state key="normal" title="下载封装"/>
+                                <connections>
+                                    <action selector="downloadAssetLoaderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5za-nT-qcH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xDE-Ga-HYn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ZG-jg-4Av"/>
+                            <constraint firstItem="jkF-zC-qVF" firstAttribute="top" secondItem="xDE-Ga-HYn" secondAttribute="bottom" constant="8" id="83P-Yr-6ZQ"/>
+                            <constraint firstItem="7p4-KL-cd0" firstAttribute="top" secondItem="rlm-Z2-Yxt" secondAttribute="bottom" constant="8" id="D7c-LB-MGT"/>
+                            <constraint firstItem="jkF-zC-qVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FV5-6o-6c7"/>
+                            <constraint firstItem="FZq-wK-JWL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FzV-dy-q4A"/>
+                            <constraint firstItem="xDE-Ga-HYn" firstAttribute="top" secondItem="rlm-Z2-Yxt" secondAttribute="bottom" constant="70" id="LS0-S4-zut"/>
+                            <constraint firstItem="Fvz-Ve-W7V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OcK-bv-dNP"/>
+                            <constraint firstItem="FZq-wK-JWL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qf3-hc-riK"/>
+                            <constraint firstItem="Fvz-Ve-W7V" firstAttribute="top" secondItem="FZq-wK-JWL" secondAttribute="bottom" constant="70" id="ZbB-2F-5vl"/>
+                            <constraint firstItem="RaE-cM-VU8" firstAttribute="top" secondItem="FZq-wK-JWL" secondAttribute="bottom" constant="8" id="e9J-Wt-kMo"/>
+                            <constraint firstItem="FZq-wK-JWL" firstAttribute="top" secondItem="xDE-Ga-HYn" secondAttribute="bottom" constant="70" id="g1s-3k-Owf"/>
+                            <constraint firstItem="RaE-cM-VU8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hFN-n2-V7t"/>
+                            <constraint firstItem="rlm-Z2-Yxt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n5A-es-B6M"/>
+                            <constraint firstItem="7p4-KL-cd0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPx-Bv-Z5y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
