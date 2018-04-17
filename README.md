@@ -31,6 +31,8 @@ ServiceProvider.request(
 }
 ```
 
+![](http://og1yl0w9z.bkt.clouddn.com/18-4-17/12133981.jpg)
+
 封装下载 AssetLoader 使用示例代码：
 ```Swift
 func downloadAssetLoader() {
@@ -45,3 +47,5 @@ func downloadAssetLoader() {
     }
 }
 ```
+
+![](http://og1yl0w9z.bkt.clouddn.com/18-4-17/69970873.jpg)
