@@ -31,6 +31,8 @@ ServiceProvider.request(
 }
 ```
 
+控制台打印信息：
+
 ![](http://og1yl0w9z.bkt.clouddn.com/18-4-17/12133981.jpg)
 
 封装下载 AssetLoader 使用示例代码：
@@ -47,5 +49,7 @@ func downloadAssetLoader() {
     }
 }
 ```
+
+控制台打印信息：
 
 ![](http://og1yl0w9z.bkt.clouddn.com/18-4-17/69970873.jpg)
